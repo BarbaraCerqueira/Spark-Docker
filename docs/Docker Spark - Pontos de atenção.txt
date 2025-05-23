@@ -1,0 +1,5 @@
+Docker Spark - Pontos de atenção:
+
+- Para não precisar colocar o token e registrar uma senha, adicionar o comando --NotebookApp.token='' no Dockerfile que constrói a imagem do Jupyter com spark.
+- Para acessar a Spark UI criada dentro do container Jupyter na porta 4040, é preciso expor a porta no arquivo docker-compose.
+- No docker-compose foi mapeado os diretórios do Jupyter como "./notebooks:/opt/bitnami/spark/work", portanto todos os arquivos criados na pasta 'work' do jupyter irão aparecer na pasta indicada da máquina local, no caso a 'notebooks', e vice-versa.
