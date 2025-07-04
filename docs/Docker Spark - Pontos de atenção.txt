@@ -9,3 +9,4 @@ Instruções de acesso:
 - Para subir o docker-compose: docker compose up
 - Para acessar o Jupyter: http://localhost:8888/
 - Para acessar o Spark UI: http://localhost:4040/
+- Para acessar o WebUI do MinIO: http://localhost:9001/
